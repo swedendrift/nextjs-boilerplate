@@ -2,9 +2,9 @@
   "name": "nextjs-boilerplate",
   "version": "1.0.0",
   "description": "next example",
-  "main": "index.js",
+  "main": "./pages/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next"
   },
   "repository": {
     "type": "git",
