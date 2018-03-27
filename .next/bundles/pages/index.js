@@ -4,6 +4,84 @@ module.exports =
           var comp = 
       webpackJsonp([4],{
 
+/***/ "./components/Footer.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_next_link__ = __webpack_require__("./node_modules/next/link.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_next_link__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
+var _jsxFileName = '/Users/elee2/code.repos/nextjs-boilerplate/components/Footer.js';
+
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+
+
+
+var footerStyle = {
+  marginBottom: 30,
+  display: 'flex',
+  justifyContent: 'center'
+};
+
+var Footer = function Footer() {
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+    'div',
+    {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+      'p',
+      { href: '/', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'a',
+        { style: footerStyle, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
+          }
+        },
+        'Home'
+      )
+    )
+  );
+};
+
+var _default = Footer;
+/* unused harmony default export */ var _unused_webpack_default_export = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/patch.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(footerStyle, 'footerStyle', '/Users/elee2/code.repos/nextjs-boilerplate/components/Footer.js');
+  reactHotLoader.register(Footer, 'Footer', '/Users/elee2/code.repos/nextjs-boilerplate/components/Footer.js');
+  reactHotLoader.register(_default, 'default', '/Users/elee2/code.repos/nextjs-boilerplate/components/Footer.js');
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
 /***/ "./components/Header.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -102,8 +180,9 @@ var _default = Header;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Header__ = __webpack_require__("./components/Header.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Footer__ = __webpack_require__("./components/Footer.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
 var _jsxFileName = '/Users/elee2/code.repos/nextjs-boilerplate/components/myLayout.js';
 
 (function () {
@@ -115,6 +194,7 @@ var _jsxFileName = '/Users/elee2/code.repos/nextjs-boilerplate/components/myLayo
 
 
 
+
 var layoutStyle = {
   margin: 20,
   padding: 20,
@@ -122,20 +202,26 @@ var layoutStyle = {
 };
 
 var Layout = function Layout(props) {
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+  return __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(
     'div',
     { style: layoutStyle, __source: {
         fileName: _jsxFileName,
-        lineNumber: 11
-      }
-    },
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0__Header__["a" /* default */], {
-      __source: {
-        fileName: _jsxFileName,
         lineNumber: 12
       }
+    },
+    __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0__Header__["a" /* default */], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      }
     }),
-    props.children
+    props.children,
+    __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(Footer, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      }
+    })
   );
 };
 
