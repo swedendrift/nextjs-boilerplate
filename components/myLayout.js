@@ -1,5 +1,5 @@
 import Header from './Header'
-import Foorter from './Footer'
+import Footer from './Footer'
 import React from 'react'
 
 const layoutStyle = {
